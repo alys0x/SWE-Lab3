@@ -1,5 +1,6 @@
 public class Sorter {
     public void insertionSort(int arr[])
+
     {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
@@ -36,5 +37,8 @@ public class Sorter {
             arr[min_idx] = arr[i];
             arr[i] = temp;
         }
+    }
+    public void sort(int array[] ){
+        insertionSort(array);
     }
 }
