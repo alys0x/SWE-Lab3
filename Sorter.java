@@ -17,7 +17,7 @@ public class Sorter {
             arr[j + 1] = key;
         }
 }
-    public void selectionSort(int arr[])
+    public void selectionSort(float arr[])
     {
         int n = arr.length;
 
@@ -33,12 +33,15 @@ public class Sorter {
 
             // Swap the found minimum element with the first
             // element
-            int temp = arr[min_idx];
+            float temp = (int) arr[min_idx];
             arr[min_idx] = arr[i];
             arr[i] = temp;
         }
     }
     public void sort(int array[] ){
         insertionSort(array);
+    }
+    public void sort(float array[] ){
+        selectionSort(array);
     }
 }
